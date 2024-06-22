@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Dashboard - NiceAdmin Bootstrap Template</title>
+  <title>Travely</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -36,32 +36,40 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <!-- <style>
+    body{
+      overflow: hidden;
+    }
+  </style> -->
 </head>
 
 <body>
-  <main id="main" class="main">
+  <main class="main-content">
 
-    <div class="row">
-      <div class="col-md-8">
-        <div class="pagetitle">
+    <div class="left">
+      <img src="{{ asset('style\assets\img\travelyicon.png') }}" alt="">
+      <div class="pagetitle">
           <h1>Welcome Back!</h1>
-        </div><!-- End Page Title -->
-        
-        <form>
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label" style="text-indent:100px;">Username</label>
-            <input type="email" class="form-control" style="margin-bottom: 10px; margin-left:100px; width: 500px; border-radius: 60px;" id="exampleInputEmail1" aria-describedby="emailHelp">
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" style="text-indent:100px;" class="form-label">Password</label>
-            <input type="password" class="form-control" style="margin-bottom: 10px; margin-left:100px; width: 500px; border-radius: 60px;" id="exampleInputPassword1">
-            <a href="/home" class="btn btn-primary rounded-pill" style="margin-top: 10px; margin-bottom: 10px; margin-left: 100px; width: 500px">Login</a>
-          </div>
-          <div>
-            <p><a href="#" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover text-decoration-underline" style="margin-left: 450px;">Forgot Password?</a></p>
-          </div>
-        </form>
       </div>
+      <form action="" class="login-form">
+        <div class="row">
+          <label for="exampleInputEmail1" class="form-label">Username</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="row">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+          <a class="btn btn-primary btn-login" href="/home" role="button">Login</a>
+        </div>
+        <div>
+          <a href="/otp" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover text-decoration-underline">Forgot Password?</a>
+        </div>
+      </form>
+    
+    </div>
+    <div class="right"></div>
+    <img src="{{ asset('style\assets\img\b.png') }}" class="center-image" alt="Center Image">
+    <img src="{{ asset('style\assets\img\login.svg') }}" class="left-bottom-image" alt="Left Bottom Image">
     
   </main><!-- End #main -->
   
@@ -79,5 +87,3 @@
   <script src="{{asset('style/assets/js/main.js')}}"></script>
 
 </body>
-
-</html>
